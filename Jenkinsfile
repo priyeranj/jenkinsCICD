@@ -7,9 +7,9 @@ pipeline{
     environment{
         APP_NAME = "spring-docker-cicd"
         RELEASE_NO = "1.0.0"
-        DOCKER_USER= "ketti23"
-        IMAGE_NAME="{DOCKER_USER}" + "/" + "${APP_NAME}"
-        IMAGE_TAG= "${RELEASE_NO}-${BUILD_NUMBER}"
+        DOCKER_USER = "ketti23"
+        IMAGE_NAME = "${DOCKER_USER}/${APP_NAME}"
+        IMAGE_TAG = "${RELEASE_NO}-${BUILD_NUMBER}"
    }
     stages{
 
